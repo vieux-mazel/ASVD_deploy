@@ -1,0 +1,9 @@
+title = "payment"
+url = "/payment/:slug"
+layout = "default"
+hidden = "0"
+
+[paymentslug]
+slug = "{{ :slug }}"
+==
+{% component 'paymentslug' %}

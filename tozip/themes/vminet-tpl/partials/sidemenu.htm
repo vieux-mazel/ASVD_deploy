@@ -1,0 +1,65 @@
+<ul class="nav">
+    <!-- Header -->
+    <div class="profile-sidebar">
+        <!-- SIDEBAR USERPIC -->
+        <div class="profile-userpic">
+                <img src="{{'assets/images/default_profil.png'|theme}}" class="img-responsive" alt=""/>
+        </div>
+        <!-- END SIDEBAR USERPIC -->
+        <!-- SIDEBAR USER TITLE -->
+        <div class="profile-usertitle">
+                <div class="profile-usertitle-name">
+                    Bonjour
+                </div>
+                <div class="profile-usertitle-job">
+                    {{user.name}}
+                </div>
+        </div>
+        <!-- END SIDEBAR USER TITLE -->
+        <!-- SIDEBAR BUTTONS -->
+
+        <!-- END SIDEBAR BUTTONS -->
+        <!-- SIDEBAR MENU -->
+        <div class="profile-usermenu">
+                <ul class="nav">
+                        <li class="{% if this.page.id == 'payment_info' %}active{% endif %}">
+                            <a href="{{ 'payment_info'|page }}">
+                            <i class="glyphicon glyphicon-home"></i>
+                            Mes cordonnées bancaires</a>
+                        </li>
+                        <li class="{% if this.page.id == 'home' %}active{% endif %}">
+                            <a href="{{ 'home' |page }}">
+                            <i class="glyphicon glyphicon-home"></i>
+                            Demander un remboursement </a>
+                        </li>
+                        <li class="{% if this.page.id == 'moderate' %}active{% endif %}">
+                            <a href="{{ 'moderate'|page }}">
+                            <i class="glyphicon glyphicon-user"></i>
+                            Modération de payements </a>
+                        </li>
+                        <li class="{% if this.page.id == 'caissier' %}active{% endif %}">
+                            <a href="{{ 'caissier'|page }}">
+                            <i class="glyphicon glyphicon-user"></i>
+                            Exécution de payements </a>
+                        </li>
+                        <li> <a href="#" data-request="onLogout">Se déconnecter</a></li>
+                        <li class="{% if this.page.id == 'noneset' %}active{% endif %} disabled">
+                            <a href="#">
+                            <i class="glyphicon glyphicon-ok"></i>
+                            PV et OJ </a>
+                        </li>
+                        <li class="{% if this.page.id == 'noneset' %}active{% endif %} disabled">
+                            <a href="#">
+                            <i class="glyphicon glyphicon-flag"></i>
+                            Tâches </a>
+                        </li>
+                        <li class="{% if this.page.id == 'noneset' %}active{% endif %} disabled">
+                            <a href="#">
+                            <i class="glyphicon glyphicon-flag"></i>
+                            Archivage </a>
+                        </li>
+                </ul>
+        </div>
+    <!-- END MENU -->
+</div>
+</ul>
