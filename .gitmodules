@@ -1,0 +1,3 @@
+[submodule "tozip/plugins/vm/financial"]
+	path = tozip/plugins/vm/financial
+	url = https://github.com/vieux-mazel/INet-Financial.git
